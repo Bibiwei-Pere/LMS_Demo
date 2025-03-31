@@ -1,6 +1,6 @@
 import { AboutUs } from "@/components/landing/About";
 import { Cases } from "@/components/landing/Cases";
-import { PaymentForm } from "@/components/landing/ContactForm";
+import { PaymentForm, PricingSection } from "@/components/landing/ContactForm";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
 import { Hero } from "@/components/landing/Hero";
@@ -16,6 +16,7 @@ export default function Home() {
       <Cases />
       <AboutUs />
       {/* <Testimonials /> */}
+      <PricingSection />
       <PaymentForm />
       {/* <Footer /> */}
     </main>
