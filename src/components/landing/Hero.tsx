@@ -56,10 +56,9 @@ export const Hero = () => {
           <h5 className='max-w-[600px] text-[18px] font-normal'>{heroData[slideIndex].text}</h5>
         </Reveal3>
         <div className='flex gap-4 mt-5'>
-          <Button onClick={() => router.push("#cases")} variant={"outline"}>
-            Learn more
+          <Button onClick={() => router.push("#purchase")} variant={"outline"}>
+            Purchase
           </Button>
-          <Button>Contact us</Button>
         </div>
       </div>
 

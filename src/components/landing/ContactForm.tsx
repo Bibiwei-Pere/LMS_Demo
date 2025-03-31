@@ -22,9 +22,9 @@ export function PaymentForm() {
   };
 
   return (
-    <section id='payment' className='py-20 bg-gray-100'>
+    <section id='purchase' className='py-20 bg-gray-100'>
       <div className='container mx-auto px-4'>
-        <h2 className='text-3xl font-bold text-center mb-12'>Make a Payment</h2>
+        <h2 className='text-3xl font-bold text-center mb-12'>Purchase Script</h2>
         <form onSubmit={handleSubmit} className='max-w-2xl mx-auto space-y-6'>
           <Input type='text' name='name' value={form.name} onChange={handleChange} placeholder='Full Name*' required />
           <Input type='email' name='email' value={form.email} onChange={handleChange} placeholder='Email*' required />

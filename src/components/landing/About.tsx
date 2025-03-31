@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Meeting2 from "@/components/assets/Meeting2.jpg";
 import Meeting3 from "@/components/assets/Meeting3.jpg";
@@ -6,8 +7,10 @@ import People1 from "@/components/assets/People1.jpg";
 import { Container } from "../ui/containers";
 import { Button } from "../ui/button";
 import { Check } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export function AboutUs() {
+  const router = useRouter();
   return (
     <section id='about' className='max-w-screen-2xl w-full h-full relative bg-gray-100'>
       <Image
@@ -46,8 +49,12 @@ export function AboutUs() {
               running a private academy, vocational training center, or corporate upskilling program, Midland LMS equips
               you with everything needed to succeed in digital learning.
             </p>
-            <Button variant={"outline"} className='border-blue-800 text-blue-800 hover:text-white ml-0'>
-              Learn More
+            <Button
+              className='border-blue-800 text-blue-800 hover:text-white ml-0'
+              onClick={() => router.push("#purchase")}
+              variant={"outline"}
+            >
+              Purchase
             </Button>
           </div>
           <div className='flex flex-col gap-2 bg-gray-900 px-14 pt-16 pb-10'>
@@ -70,9 +77,8 @@ export function AboutUs() {
                 </div>
               ))}
             </div>
-
-            <Button variant={"outline"} className='mt-2 ml-0'>
-              Discover More
+            <Button className='mt-2 ml-0' onClick={() => router.push("#purchase")} variant={"outline"}>
+              Purchase
             </Button>
           </div>
           <Image src={Meeting3} alt='About' className='w-full h-full object-cover' />

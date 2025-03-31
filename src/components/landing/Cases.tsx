@@ -44,7 +44,7 @@ export function Cases() {
 
   return (
     <section id='cases' className='py-8 lg:py-20 flex flex-col gap-14 bg-gray-100'>
-      <LandingTitle title='Our Cases' text='View all works' />
+      <LandingTitle title='Features' text='View all features' />
       <div className='overflow-hidden relative w-full'>
         <div
           className='flex transition-transform duration-500 pb-24 ease-in-out'

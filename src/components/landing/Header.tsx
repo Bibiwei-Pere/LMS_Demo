@@ -79,7 +79,7 @@ export const Header1 = () => {
         scroll ? "bg-blue-950 top-0" : "bg-transparent top-0 lg:top-[80px]"
       }`}
     >
-      <div className='hidden lg:flex pt-3 px-4 lg:px-8 xl:px-24 justify-between items-center'>
+      <div className='hidden lg:flex pt-3 pb-2 px-4 lg:px-8 xl:px-24 justify-between items-center'>
         <div className='flex gap-2 items-center'>
           {/* <Image src={Logo} alt='Logo' className='w-8' /> */}
           <h4>Midlandslms</h4>
