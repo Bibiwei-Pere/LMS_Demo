@@ -186,7 +186,7 @@ export function PricingSection() {
             <CheckCircle className='text-green-600 w-5 h-5' /> Next.js, Tailwind, ShadCN frontend
           </li>
           <li className='flex items-center gap-2'>
-            <CheckCircle className='text-green-600 w-5 h-5' /> Node js, Express backend with database integration
+            <CheckCircle className='text-green-600 w-5 h-5' /> Node js backend with database integration
           </li>
           <li className='flex items-center gap-2'>
             <CheckCircle className='text-green-600 w-5 h-5' /> Encrypted video streaming & quizzes
