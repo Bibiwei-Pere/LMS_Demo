@@ -35,23 +35,25 @@ export function PaymentForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const formData = new FormData();
-    formData.append("name", form.name);
-    formData.append("email", form.email);
-    formData.append("phone", form.phone);
-    formData.append("amount", form.amount);
-    formData.append("bank", form.bank);
-    formData.append("reference", form.reference);
-    formData.append("date", form.date);
-    formData.append("time", form.time);
-    if (form.receipt) {
-      formData.append("receipt", form.receipt);
-    }
+    const payload = {
+      name: form.name,
+      email: form.email,
+      phone: form.phone,
+      amount: form.amount,
+      bank: form.bank,
+      reference: form.reference,
+      date: form.date,
+      time: form.time,
+      receipt: form.receipt ? form.receipt : "", // Optional: just sending file name for reference
+    };
 
     try {
       const response = await fetch("https://api.scholarly.pro/auth/mail", {
         method: "POST",
-        body: formData,
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
       });
 
       if (response.ok) {
