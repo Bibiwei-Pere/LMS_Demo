@@ -158,8 +158,7 @@ export function PaymentForm() {
         <div className='text-[15px] text-white text-center'>
           For support or questions, please contact us:
           <br />
-          <a href='mailto:support@midlandslms.com'>support@midlandslms.com</a> <br />
-          <a href='https://wa.me/2348100000000'>+234 810 000 0000</a>
+          <a href='mailto:sales@harriswetlands.com.ng'>sales@harriswetlands.com.ng</a> <br />
         </div>
       </div>
     </>
@@ -187,7 +186,7 @@ export function PricingSection() {
             <CheckCircle className='text-green-600 w-5 h-5' /> Next.js, Tailwind, ShadCN frontend
           </li>
           <li className='flex items-center gap-2'>
-            <CheckCircle className='text-green-600 w-5 h-5' /> .NET backend with database integration
+            <CheckCircle className='text-green-600 w-5 h-5' /> Node js, Express backend with database integration
           </li>
           <li className='flex items-center gap-2'>
             <CheckCircle className='text-green-600 w-5 h-5' /> Encrypted video streaming & quizzes
