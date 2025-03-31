@@ -39,7 +39,7 @@ export function PaymentForm() {
 
   return (
     <>
-      <section id='payment' className='py-20 bg-gray-100'>
+      <section id='purchase' className='py-20 bg-gray-100'>
         <div className='container mx-auto px-4 max-w-3xl'>
           <h2 className='text-3xl font-bold text-center mb-8'>MidlandsLMS Software Script Purchase Instructions</h2>
           <div className='bg-white p-6 rounded-md shadow space-y-4 text-gray-700 text-sm'>
