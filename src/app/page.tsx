@@ -1,6 +1,6 @@
 import { AboutUs } from "@/components/landing/About";
 import { Cases } from "@/components/landing/Cases";
-import { ContactForm } from "@/components/landing/ContactForm";
+import { PaymentForm } from "@/components/landing/ContactForm";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
 import { Hero } from "@/components/landing/Hero";
@@ -10,14 +10,14 @@ import { Testimonials } from "@/components/landing/Testimonials";
 export default function Home() {
   return (
     <main>
-      <Header />
+      {/* <Header /> */}
       <Hero />
       <Services />
       <Cases />
       <AboutUs />
-      <Testimonials />
-      <ContactForm />
-      <Footer />
+      {/* <Testimonials /> */}
+      <PaymentForm />
+      {/* <Footer /> */}
     </main>
   );
 }

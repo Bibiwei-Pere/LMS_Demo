@@ -82,9 +82,9 @@ export const Header1 = () => {
       <div className='hidden lg:flex pt-3 px-4 lg:px-8 xl:px-24 justify-between items-center'>
         <div className='flex gap-2 items-center'>
           {/* <Image src={Logo} alt='Logo' className='w-8' /> */}
-          <h4>Midlands</h4>
+          <h4>Midlandslms</h4>
         </div>
-        <ul className='flex gap-9 mt-5'>
+        {/* <ul className='flex gap-9 mt-5'>
           {navContent.map((item, index) => (
             <h5
               key={index}
@@ -97,15 +97,15 @@ export const Header1 = () => {
               {item}
             </h5>
           ))}
-        </ul>
+        </ul> */}
       </div>
-      <div className={`lg:hidden flex justify-between items-center p-4 ${scroll && "bg-blue-950"}`}>
+      {/* <div className={`lg:hidden flex justify-between items-center p-4 ${scroll && "bg-blue-950"}`}>
         <div className='flex gap-2 items-center'>
           <Image src={Logo} alt='Logo' className='w-8' />
           <h4>Midlands</h4>
         </div>
         <MobileMenu />
-      </div>
+      </div> */}
     </div>
   );
 };
