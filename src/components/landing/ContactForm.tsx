@@ -32,9 +32,49 @@ export function PaymentForm() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setDialogOpen(true);
+
+    const formData = new FormData();
+    formData.append("name", form.name);
+    formData.append("email", form.email);
+    formData.append("phone", form.phone);
+    formData.append("amount", form.amount);
+    formData.append("bank", form.bank);
+    formData.append("reference", form.reference);
+    formData.append("date", form.date);
+    formData.append("time", form.time);
+    if (form.receipt) {
+      formData.append("receipt", form.receipt);
+    }
+
+    try {
+      const response = await fetch("https://api.scholarly.pro/auth/mail", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        setDialogOpen(true);
+        setForm({
+          name: "",
+          email: "",
+          phone: "",
+          amount: "",
+          bank: "",
+          reference: "",
+          date: "",
+          time: "",
+          receipt: null,
+        });
+      } else {
+        const error = await response.json();
+        alert(`Submission failed: ${error.message}`);
+      }
+    } catch (err) {
+      console.error("Error submitting form:", err);
+      alert("Something went wrong. Please try again.");
+    }
   };
 
   return (
