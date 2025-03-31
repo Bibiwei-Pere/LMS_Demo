@@ -154,6 +154,9 @@
     color: white;
   }
 
+  li {
+    font-size: 16px;
+  }
   h6 {
     font-size: 15px;
     font-weight: 600;

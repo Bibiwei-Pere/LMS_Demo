@@ -5,7 +5,7 @@ import { AlignRight, Clock, MailOpen, Phone } from "lucide-react";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { socials } from "./Footer";
 import { Reveal5 } from "@/app/components/animations/Text";
-import Logo from "@/components/assets/Logo.svg";
+import Logo from "@/components/assets/logos.png";
 import Link from "next/link";
 import { Select, SelectValue, SelectTrigger, SelectItem, SelectContent } from "../ui/select";
 
@@ -81,7 +81,7 @@ export const Header1 = () => {
     >
       <div className='hidden lg:flex pt-3 pb-2 px-4 lg:px-8 xl:px-24 justify-between items-center'>
         <div className='flex gap-2 items-center'>
-          {/* <Image src={Logo} alt='Logo' className='w-8' /> */}
+          <Image src={Logo} alt='Logo' className='w-8' />
           <h4>Midlandslms</h4>
         </div>
         {/* <ul className='flex gap-9 mt-5'>
